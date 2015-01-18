@@ -1,0 +1,17 @@
+{
+    "name": "wikimediadebug",
+    "title": "Wikimedia Debug Header",
+    "id": "wikimediadebug@wikimedia.org",
+    "description": "Inject 'X-Wikimedia-Debug' header into HTTP requests.",
+    "author": "Bryan Davis <bd808@wikimedia.org>",
+    "contributors": [
+        "Ori Livneh <ori@wikimedia.org>"
+    ],
+    "icon": "data/icon.png",
+    "icon64": "data/icon_64.png",
+    "license": "Apache 2.0",
+    "permissions": {
+        "private-browsing": true
+    },
+    "version": "0.1"
+}
