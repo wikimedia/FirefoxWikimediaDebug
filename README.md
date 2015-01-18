@@ -1,5 +1,5 @@
 Firefox Wikimedia Debug Add-on
-=============================+
+==============================
 
 This Firefox addon injects an `X-Wikimedia-Debug` header into HTTP requests to
 Wikimedia Foundation projects. Requests bearing this header are not cached and
