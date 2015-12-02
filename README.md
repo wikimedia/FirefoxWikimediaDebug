@@ -5,6 +5,8 @@ This Firefox addon injects a `X-Wikimedia-Debug` header into HTTP requests to
 Wikimedia Foundation projects. Requests bearing this header are not cached and
 are all handled by a single machine.
 
+There is also a [Chrome version](https://github.com/wikimedia/ChromeWikimediaDebug).
+
 Installation
 ------------
 
