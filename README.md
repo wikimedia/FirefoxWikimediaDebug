@@ -13,7 +13,7 @@ Installation
 The addon is built using the [Add-on SDK][] from Mozilla.
 
 ```
-$ cfx xpi
+$ jpm xpi
 ```
 
 Official releases can be installed from [addons.mozilla.org][].
