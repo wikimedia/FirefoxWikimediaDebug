@@ -9,7 +9,7 @@
     ],
     "icon": "data/icon.png",
     "icon64": "data/icon_64.png",
-    "license": "Apache 2.0",
+    "license": "Apache-2.0",
     "main": "lib/main.js",
     "permissions": {
         "private-browsing": true
