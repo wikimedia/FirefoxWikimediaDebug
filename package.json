@@ -14,5 +14,19 @@
     "permissions": {
         "private-browsing": true
     },
-    "version": "0.4.1"
+    "preferences": [{
+        "name": "backend",
+        "title": "Backend server",
+        "description": "Backend server requests should be sent to",
+        "type": "string",
+        "value": "mw1017.eqiad.wmnet"
+    },
+    {
+        "name": "timeout",
+        "title": "Timeout",
+        "description": "Disable debug header after this many minutes",
+        "type": "integer",
+        "value": 15
+    }],
+    "version": "0.5.0"
 }
