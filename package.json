@@ -22,11 +22,25 @@
         "value": "mw1017.eqiad.wmnet"
     },
     {
+        "name": "profile",
+        "title": "Profile",
+        "description": "Record a trace of request-processing code for performance analysis",
+        "type": "bool",
+        "value": false
+    },
+    {
+        "name": "readonly",
+        "title": "Read-only",
+        "description": "Request a page with MediaWiki set to read-only mode",
+        "type": "bool",
+        "value": false
+    },
+    {
         "name": "timeout",
         "title": "Timeout",
-        "description": "Disable debug header after this many minutes",
+        "description": "Disable debug header injection after this many minutes",
         "type": "integer",
         "value": 15
     }],
-    "version": "0.5.0"
+    "version": "0.6.0"
 }

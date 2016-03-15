@@ -4,8 +4,11 @@ body {
   overflow: hidden;
   padding: 0;
 }
-#wrapper {
+#container {
   margin: 0;
   padding: 1em;
   width: -moz-max-content;
+}
+input {
+  margin:3px 0;
 }
