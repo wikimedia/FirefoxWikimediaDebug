@@ -1,6 +1,7 @@
 var eBackend = document.getElementById("backend"),
     eProfile = document.getElementById("profile"),
     eReadonly = document.getElementById("readonly"),
+    eLog = document.getElementById("log"),
     eContainer = document.getElementById("container");
 
 eBackend.addEventListener("input", function (e) {
@@ -15,10 +16,15 @@ eReadonly.addEventListener("change", function (e) {
     self.port.emit("change", "readonly", eReadonly.checked);
 }, false);
 
-self.port.on("show", function (backend, profile, readonly) {
+eLog.addEventListener("change", function (e) {
+    self.port.emit("change", "log", eLog.checked);
+}, false);
+
+self.port.on("show", function (backend, profile, readonly, log) {
     eBackend.value = backend;
     eProfile.checked = profile;
     eReadonly.checked = readonly;
+    eLog.checked = log;
     self.port.emit("resize", eContainer.scrollWidth, eContainer.scrollHeight);
 });
 
