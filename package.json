@@ -18,8 +18,26 @@
         "name": "backend",
         "title": "Backend server",
         "description": "Backend server requests should be sent to",
-        "type": "string",
-        "value": "mw1017.eqiad.wmnet"
+        "type": "menulist",
+        "value": "mw1017.eqiad.wmnet",
+        "options": [
+            {
+                "value": "mw1017.eqiad.wmnet",
+                "label": "mw1017.eqiad.wmnet"
+            },
+            {
+                "value": "mw1099.eqiad.wmnet",
+                "label": "mw1099.eqiad.wmnet"
+            },
+            {
+                "value": "mw2017.codfw.wmnet",
+                "label": "mw2017.codfw.wmnet"
+            },
+            {
+                "value": "mw2099.codfw.wmnet",
+                "label": "mw2099.codfw.wmnet"
+            }
+        ]
     },
     {
         "name": "log",

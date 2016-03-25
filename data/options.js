@@ -4,7 +4,7 @@ var eBackend = document.getElementById("backend"),
     eLog = document.getElementById("log"),
     eContainer = document.getElementById("container");
 
-eBackend.addEventListener("input", function (e) {
+eBackend.addEventListener("change", function (e) {
     self.port.emit("change", "backend", eBackend.value);
 }, false);
 
