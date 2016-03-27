@@ -12,3 +12,10 @@ body {
 input {
   margin:3px 0;
 }
+.help {
+  font-size: smaller;
+  text-align: right;
+}
+.help a {
+  cursor: help;
+}
