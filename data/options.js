@@ -1,8 +1,13 @@
-var eBackend = document.getElementById("backend"),
+var eEnabled = document.getElementById("enabled"),
+    eBackend = document.getElementById("backend"),
     eProfile = document.getElementById("profile"),
     eReadonly = document.getElementById("readonly"),
     eLog = document.getElementById("log"),
     eContainer = document.getElementById("container");
+
+eEnabled.addEventListener("change", function (e) {
+    self.port.emit("enable", eEnabled.checked);
+}, false);
 
 eBackend.addEventListener("change", function (e) {
     self.port.emit("change", "backend", eBackend.value);
@@ -20,7 +25,8 @@ eLog.addEventListener("change", function (e) {
     self.port.emit("change", "log", eLog.checked);
 }, false);
 
-self.port.on("show", function (backend, profile, readonly, log) {
+self.port.on("show", function (enabled, backend, profile, readonly, log) {
+    eEnabled.checked = enabled;
     eBackend.value = backend;
     eProfile.checked = profile;
     eReadonly.checked = readonly;
