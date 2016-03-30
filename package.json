@@ -7,8 +7,7 @@
     "contributors": [
         "Ori Livneh <ori@wikimedia.org>"
     ],
-    "icon": "data/icon.png",
-    "icon64": "data/icon_64.png",
+    "icon": "resource://@wikimediadebug/data/icon.png",
     "license": "Apache-2.0",
     "main": "lib/main.js",
     "permissions": {
@@ -18,8 +17,26 @@
         "name": "backend",
         "title": "Backend server",
         "description": "Backend server requests should be sent to",
-        "type": "string",
-        "value": "mw1017.eqiad.wmnet"
+        "type": "menulist",
+        "value": "mw1017.eqiad.wmnet",
+        "options": [
+            {
+                "value": "mw1017.eqiad.wmnet",
+                "label": "mw1017.eqiad.wmnet"
+            },
+            {
+                "value": "mw1099.eqiad.wmnet",
+                "label": "mw1099.eqiad.wmnet"
+            },
+            {
+                "value": "mw2017.codfw.wmnet",
+                "label": "mw2017.codfw.wmnet"
+            },
+            {
+                "value": "mw2099.codfw.wmnet",
+                "label": "mw2099.codfw.wmnet"
+            }
+        ]
     },
     {
         "name": "log",
@@ -49,5 +66,5 @@
         "type": "integer",
         "value": 15
     }],
-    "version": "0.6.1"
+    "version": "0.7.0"
 }

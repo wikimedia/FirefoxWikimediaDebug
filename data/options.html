@@ -2,14 +2,28 @@
 <html>
   <body>
     <div id="container">
-      <input data-l10n-id="prefs_backend" type="text" id="backend">
-      <div class="toggles">
-        <input type="checkbox" id="profile">
-        <label data-l10n-id="prefs_profile" for="profile"></label>
-        <input type="checkbox" id="readonly">
-        <label data-l10n-id="prefs_readonly" for="readonly"></label>
-        <input type="checkbox" id="log">
-        <label data-l10n-id="prefs_log" for="log"></label>
+      <div class="switch">
+        <input type="checkbox" id="enabled">
+        <label data-l10n-id="prefs_enabled" for="enabled"></label>
+      </div>
+      <div class="options">
+        <select data-l10n-id="prefs_backend" id="backend">
+          <option>mw1017.eqiad.wmnet</option>
+          <option>mw1099.eqiad.wmnet</option>
+          <option>mw2017.codfw.wmnet</option>
+          <option>mw2099.codfw.wmnet</option>
+        </select>
+        <div class="toggles">
+          <input type="checkbox" id="profile">
+          <label data-l10n-id="prefs_profile" for="profile"></label>
+          <input type="checkbox" id="readonly">
+          <label data-l10n-id="prefs_readonly" for="readonly"></label>
+          <input type="checkbox" id="log">
+          <label data-l10n-id="prefs_log" for="log"></label>
+        </div>
+      </div>
+      <div class="help">
+        <a data-l10n-id="prefs_help" target="wikimediadebug" href="https://wikitech.wikimedia.org/wiki/X-Wikimedia-Debug"></a>
       </div>
     </div>
   </body>
