@@ -7,8 +7,7 @@
     "contributors": [
         "Ori Livneh <ori@wikimedia.org>"
     ],
-    "icon": "data/icon.png",
-    "icon64": "data/icon_64.png",
+    "icon": "resource://@wikimediadebug/data/icon.png",
     "license": "Apache-2.0",
     "main": "lib/main.js",
     "permissions": {
@@ -67,5 +66,5 @@
         "type": "integer",
         "value": 15
     }],
-    "version": "0.6.1"
+    "version": "0.7.0"
 }
