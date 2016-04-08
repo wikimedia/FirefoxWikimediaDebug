@@ -24,8 +24,11 @@ License
 Wikimedia Debug Header Firefox Add-on is licensed under the Apache 2.0
 license. See the `LICENSE` file for more details.
 
+Some icons from [glyphicons.com][] ([CC-BY 3.0][])
 
 [wikitech]: https://wikitech.wikimedia.org/wiki/X-Wikimedia-Debug
 [Add-on SDK]: https://developer.mozilla.org/en-US/Add-ons/SDK
 [addons.mozilla.org]: https://addons.mozilla.org/en-US/firefox/addon/wikimedia-debug-header/
 [Chrome version]: https://github.com/wikimedia/ChromeWikimediaDebug
+[glyphicons.com]: http://glyphicons.com/
+[CC-BY 3.0]: https://creativecommons.org/licenses/by/3.0/
