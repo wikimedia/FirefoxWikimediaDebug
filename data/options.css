@@ -23,46 +23,15 @@ input {
   visibility: hidden;
 }
 .switch label {
-  border-radius: .25em;
+  background: #c00 url("glyphicons-64-power.png") no-repeat 6px 5px/20px 20px;
+  border-radius: 50%;
   cursor: pointer;
   display: block;
-  font-size: 1.5em;
-  height: 2em;
-  line-height: 2em;
-  outline: none;
-  overflow: hidden;
-  padding: 2px;
-  position: relative;
-  width: 3em;
+  height: 32px;
+  width: 32px;
 }
-.switch label:before,
-.switch label:after {
-  backface-visibility: hidden;
-  border-radius: .25em;
-  bottom: 0;
-  color: #fff;
-  display: block;
-  left: 0;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 0;
-  transition: transform 0s;
-}
-.switch label:before {
-  background: #c00;
-  content: "off";
-}
-.switch label:after {
-  background: #27aa65;
-  content: "on";
-  transform: rotateY(180deg);
-}
-#enabled:checked + label:before {
-  transform: rotateY(180deg);
-}
-#enabled:checked + label:after {
-  transform: rotateY(0);
+#enabled:checked + label {
+  background-color: #27aa65;
 }
 .options {
   float: left;
