@@ -19,6 +19,18 @@ $ jpm xpi
 
 Official releases can be installed from [addons.mozilla.org][].
 
+Development
+-----------
+
+Use the [Add-on SDK][] to test your changes to the addon in a temporary
+profile. Note that modern versions of Firefox require code signing for addons
+unless you are running the Developer Edition, Nightly, or "unbranded" builds.
+See the [extension signing FAQ][] for more details.
+
+```
+$ jpm run --binary <path to a developer edition or nightly Firefox>
+```
+
 License
 -------
 Wikimedia Debug Header Firefox Add-on is licensed under the Apache 2.0
@@ -32,3 +44,4 @@ Some icons from [glyphicons.com][] ([CC-BY 3.0][])
 [Chrome version]: https://github.com/wikimedia/ChromeWikimediaDebug
 [glyphicons.com]: http://glyphicons.com/
 [CC-BY 3.0]: https://creativecommons.org/licenses/by/3.0/
+[extension signing FAQ]: https://wiki.mozilla.org/Add-ons/Extension_Signing#FAQ
