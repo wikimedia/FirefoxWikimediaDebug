@@ -11,6 +11,7 @@
     "license": "Apache-2.0",
     "main": "lib/main.js",
     "permissions": {
+        "multiprocess": true,
         "private-browsing": true
     },
     "preferences": [{
